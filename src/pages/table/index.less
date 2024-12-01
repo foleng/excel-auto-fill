@@ -1,0 +1,38 @@
+.excel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 使容器占满屏幕 */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #dcdcdc;
+  height: 50px;
+}
+
+.toolbar button {
+  margin-right: 10px;
+  padding: 5px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  flex: 1; /* 表格区域占满剩余空间 */
+  overflow: hidden;
+  min-height: 100px; /* 设置最小高度以避免内容溢出 */
+   position: relative;
+}
+
+

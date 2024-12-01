@@ -1,0 +1,162 @@
+// the style will be applied to all pages
+:root {
+  --theme-text-primary: #262626;
+  --theme-text-secondary: #404040;
+  --theme-text-tertiary: #595959;
+  --theme-text-quaternary: #8c8c8c;
+  --theme-text-disable: #bdbdbd;
+  --theme-text-white-primary: #ffffff;
+  --theme-text-white-secondary: #ffffff;
+  --theme-text-link: #1e6fff;
+  --theme-text-link-active: #1e6fff;
+  --theme-text-brand: #6841ea;
+  --theme-text-btn-tertiary: #6841ea;
+  --theme-icon-primary: #222226;
+  --theme-icon-secondary: #3d3d43;
+  --theme-icon-tertiary: #55555d;
+  --theme-icon-quaternary: #868692;
+  --theme-icon-disable: #d9d9dd;
+  --theme-icon-white-primary: #ffffff;
+  --theme-icon-white-secondary: #ffffff;
+  --theme-icon-brand: #6841ea;
+  --theme-icon-btn-tertiary: #6841ea;
+  --theme-btn-tsp-brand: rgba(104, 65, 234, .12);
+  --theme-btn-tsp-brand-hover: rgba(104, 65, 234, .24);
+  --theme-btn-fill-primary: #6841ea;
+  --theme-btn-fill-primary-hover: #9373ff;
+  --theme-btn-fill-primary-active: #522bd6;
+  --theme-btn-fill-secondary: #ececee;
+  --theme-btn-fill-secondary-hover: #f5f5f5;
+  --theme-btn-fill-secondary-active: #d9d9dd;
+  --theme-btn-fill-tertiary: #f0ebff;
+  --theme-btn-fill-tertiary-hover: #dfd5fe;
+  --theme-btn-fill-tertiary-active: #b8a3fb;
+  --theme-btn-border-primary: #4f59661f;
+  --theme-btn-border-secondary: #4f596614;
+  --theme-fill-gray: #fafafa;
+  --theme-btn-tsp-white: #ffffffd9;
+  --theme-btn-tsp-white-hover: #ffffffa6;
+  --theme-fill-tsp-components-primary: #4f59661f;
+  --theme-fill-tsp-components-secondary: #4f596614;
+  --theme-fill-tsp-components-tertiary: #4f59660a;
+  --theme-fill-btn-primary: #ececee;
+  --theme-fill-btn-secondary: #f5f5f5;
+  --theme-fill-white: #ffffff;
+  --theme-fill-tsp-blue: #185ceb14;
+  --theme-fill-tsp-brand: #6841ea14;
+  --theme-fill-tsp-brand-primary: #6841eabf;
+  --theme-fill-tsp-brand-secondary: #6841ea73;
+  --theme-fill-tsp-brand-tertiary: #6841ea3d;
+  --theme-fill-tsp-gray: #4f596652;
+  --theme-fill-black-none: #252528;
+  --theme-label-tsp-brand-primary: #6841ea1f;
+  --theme-label-tsp-brand-secondary: #6841ea14;
+  --theme-border-light: #4f596614;
+  --theme-border-primary: #4f59661f;
+  --theme-border-quaternary: #4f596633;
+  --theme-border-active: #6841ea;
+  --theme-border-white: #ffffff0a;
+  --theme-tab-fill: #4f596614;
+  --theme-tab-fill-active: #222226;
+  --theme-tooltips-fill: #000000d9;
+  --theme-bg-white: #ffffff;
+  --theme-bg-gray-primary: #f5f5f5;
+  --theme-bg-gray-secondary: #fafafa;
+  --theme-bg-mask: #00000073;
+  --theme-bg-menu-white: #ffffff;
+  --theme-bg-menu-gray: #f5f5f5;
+  --theme-bg-tsp-gray-primary: #f5f5f5e6;
+  --theme-bg-tsp-white-primary: #ffffffd9;
+  --theme-bg-gray-nav: #ececee;
+  --theme-bg-tsp-white-secondary: #ffffff73;
+  --theme-function-info: #3bbfff;
+  --theme-function-success: #00aa5b;
+  --theme-function-warning: #ffab00;
+  --theme-function-error: #ea3639;
+  --theme-function-error-hover: #e02423;
+  --theme-function-error-border: #ffa4a3;
+  --theme-function-warning-light: #fdfae9;
+  --theme-function-warning-border: #ffe266;
+  --theme-shadow-s1: rgba(0, 0, 0, .04);
+  --theme-shadow-s2: rgba(0, 0, 0, .08);
+  --theme-shadow-s3: rgba(0, 0, 0, .24);
+  --theme-box-shadow-s1: 0px 1px 20px 0px var(--theme-shadow-s1);
+  --theme-box-shadow-s2: 0px 8px 24px 0px var(--theme-shadow-s2), 0px 0px 1px 0px var(--theme-shadow-s2);
+  --theme-box-shadow-s3: 0px 12px 40px -4px var(--theme-shadow-s3), 0px 0px 2px 0px var(--theme-shadow-s2);
+  --theme-gradient-white-not: rgba(255, 255, 255, 0);
+  --theme-gradient-white-main: rgba(255, 255, 255, .45);
+  --theme-gradient-brand-light: rgba(104, 65, 234, .08);
+  --theme-gradient-white-not-secondary: rgba(255, 255, 255, 0);
+  --theme-gradient-white: #fff;
+}
+
+.js-header-wrapper > header {
+  background-color: lightseagreen;
+}
+
+.download-icon-wrapper {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 1000;
+}
+
+.download-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: width 0.3s ease;
+}
+
+.table-icon {
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  border-radius: 36px;
+  background-color: var(--theme-bg-white);
+  box-shadow: 0 8px 20px 0 var(--theme-shadow-s2), 0 0 1px 0 var(--theme-shadow-s2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--theme-icon-tertiary);
+  transition: all 0.3s ease-in-out;
+  gap: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid var(--theme-border-white);
+
+  .icon {
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .table-icon-main {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.table-icon.hovered {
+  width: 120px; /* Increase width to make room for icons */
+  justify-content: flex-start; /* Align icons to the left */
+  padding: 4px 8px; /* Add padding to spread icons */
+
+  .icon {
+    opacity: 1;
+    transform: translateX(0); /* Ensure icons are fully visible */
+  }
+}
+
+.table-icon:not(.hovered) .icon:not(.table-icon-main) {
+  transform: translateX(-20px); /* Move icons out of view on the left */
+  opacity: 0;
+}
+
+
