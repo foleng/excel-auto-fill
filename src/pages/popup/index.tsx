@@ -11,7 +11,6 @@ import { useEffect, useState } from 'react';
 const Popup = () => {
   const [history, setHistory] = useState<any[]>([]);
   const [tableVisible, setTableVisible] = useState(false);
-  const [hotInstance, setHotInstance] = useState<any>(null);
 
   useEffect(() => {
     loadHistory();
@@ -60,25 +59,9 @@ const Popup = () => {
     }
   };
 
-  const openTableEditor = () => {
-    alert('打开表格编辑器');
-    setTableVisible(true);
-  };
-
   const handleNewTable = () => {
-    debugger;
     const url = chrome.runtime.getURL('table.html');
     window.open(url, '_blank');
-  };
-
-  const saveTableData = async () => {
-    const data = hotInstance?.getData();
-    if (data) {
-      await saveHistory(data);
-      message.success('表格数据已保存到历史记录！');
-      setTableVisible(false);
-      loadHistory();
-    }
   };
 
   return (
@@ -114,15 +97,6 @@ const Popup = () => {
         )}
         style={{ marginTop: 10 }}
       />
-      <Modal
-        visible={tableVisible}
-        onCancel={() => setTableVisible(false)}
-        onOk={saveTableData}
-        title="新建表格"
-        width={800}
-      >
-        <div id="table-editor" style={{ height: 400 }} />
-      </Modal>
     </div>
   );
 };
